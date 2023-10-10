@@ -1,0 +1,33 @@
+ALGORITHME ProduitScalaire
+
+VARIABLES 
+    Tableau A(3) : Réel
+    Tableau B(3) : Réel
+    i : Entier
+    PScalaire : Réel
+
+DEBUT
+
+    PScalaire <-- 0
+
+       POUR i <-- 0 à 2 pas 1 FAIRE 
+        ECRIRE ("Entrez l'élément ", i+1, " du premier vecteur : ")
+        LIRE (A(i))
+    FIN POUR
+
+   
+    POUR i <-- 0 à 2 pas 1 FAIRE
+        ECRIRE ("Entrez l'élément ", i+1, " du deuxième vecteur : ")
+        LIRE (B(i))
+    FIN POUR
+
+   
+    POUR i <-- 0 à 2 pas 1 FAIRE
+        PScalaire <-- PScalaire + (A(i) * B(i))
+
+    FIN POUR
+
+   
+    ECRIRE ("Le produit scalaire des deux vecteurs est : ", produitScalaire)
+
+FIN
